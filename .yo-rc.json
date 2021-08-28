@@ -1,0 +1,21 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "P13nFilterDialogBugExample",
+    "namespaceUI5": "com.ui5.ex",
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "ui5libs": "Content delivery network (SAPUI5)",
+    "newdir": false,
+    "namespaceURI": "com/ui5/ex",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
