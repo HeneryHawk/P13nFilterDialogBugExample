@@ -1,6 +1,6 @@
 # P13nFilterDialogBugExample
 
-Insert the purpose of this project and some interesting infos here
+Example for [OpenUI5 Issue #3326](https://github.com/SAP/openui5/issues/3326).
 
 ## Credits
 
