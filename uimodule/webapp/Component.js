@@ -5,7 +5,8 @@ sap.ui.define(
 
         return UIComponent.extend("com.ui5.ex.P13nFilterDialogBugExample.Component", {
             metadata: {
-                manifest: "json"
+                manifest: "json",
+                interfaces: ["sap.ui.core.IAsyncContentCreation"]
             },
 
             /**
@@ -14,14 +15,12 @@ sap.ui.define(
              * @override
              */
             init: function () {
-                // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
-
-                // enable routing
                 this.getRouter().initialize();
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+                this.getModel().setData({ entity: { foo: "Some value from the default model" } });
             }
         });
     }

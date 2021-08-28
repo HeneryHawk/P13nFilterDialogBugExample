@@ -27,9 +27,9 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": true,
+    "flexEnabled": false,
     "rootView": {
-      "viewName": "com.ui5.ex.P13nFilterDialogBugExample.view.MainView",
+      "viewName": "com.ui5.ex.P13nFilterDialogBugExample.view.App",
       "type": "XML",
       "async": true,
       "id": "idAppControl"
@@ -52,6 +52,9 @@
         "settings": {
           "bundleName": "com.ui5.ex.P13nFilterDialogBugExample.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel"
       }
     },
     "resources": {
@@ -67,22 +70,19 @@
         "viewType": "XML",
         "viewPath": "com.ui5.ex.P13nFilterDialogBugExample.view",
         "controlId": "idAppControl",
-        "controlAggregation": "pages",
-        "async": true
-      },
+        "controlAggregation": "pages"
+    },
       "routes": [
         {
+          "pattern": "",
           "name": "RouteMainView",
-          "pattern": "RouteMainView",
-          "target": ["TargetMainView"]
+          "target": "TargetMainView"
         }
       ],
       "targets": {
         "TargetMainView": {
-          "viewType": "XML",
-          "viewLevel": 1,
-          "viewId": "idAppControl",
-          "viewName": "MainView"
+          "viewName": "MainView",
+          "viewId": "mainView"
         }
       }
     }

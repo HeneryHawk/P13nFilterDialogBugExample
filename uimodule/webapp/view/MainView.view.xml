@@ -1,12 +1,21 @@
- <mvc:View controllerName="com.ui5.ex.P13nFilterDialogBugExample.controller.MainView"
-  displayBlock="true"
+<mvc:View controllerName="com.ui5.ex.P13nFilterDialogBugExample.controller.MainView" displayBlock="true"
   xmlns="sap.m"
+  xmlns:from="sap.ui.layout.form"
   xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
-    <pages>
-      <Page title="{i18n>title}">
-        <content></content>
-      </Page>
-    </pages>
-  </App>
+  <Page title="{i18n>title}">
+    <content>
+      <from:SimpleForm layout="ResponsiveLayout" editable="true">
+        <from:toolbar>
+          <OverflowToolbar>
+            <content>
+              <ToolbarSpacer />
+              <Button text="Press me" press="onButtonPress" />
+            </content>
+          </OverflowToolbar>
+        </from:toolbar>
+        <Label text="Input bound to default Model"/>
+        <Input value="{foo}"/>
+      </from:SimpleForm>
+    </content>
+  </Page>
 </mvc:View>

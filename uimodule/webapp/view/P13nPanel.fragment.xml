@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <P13nDialog id="p13nDialog" ok="onDialogClose" cancel="onDialogClose">
+        <panels>
+            <P13nFilterPanel maxExcludes="0">
+                <items>
+                    <P13nItem columnKey="firstColumn" text="{i18n>p13nDialog.firstText}" type="date"/>
+                    <P13nItem columnKey="secondColumn" text="{i18n>p13nDialog.secondText}" type="text"/>
+                    <P13nItem columnKey="staticColumnText" text="Static Text"/>
+                </items>
+            </P13nFilterPanel>
+        </panels>
+    </P13nDialog>
+</core:FragmentDefinition>
